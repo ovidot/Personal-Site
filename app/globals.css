@@ -2,23 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .hoverEffect {
+    @apply cursor-pointer hover:bg-[#bbc5fa] rounded-full w-[52px] xl:w-auto h-[52-px] xl:h-auto xl:p-3;
+  }
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 0, 0, 0;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 0, 0, 0;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  --background-all: #d5e0ff;
+  --thick-border: #7e5fed;
+  --light-border: #d5dcff;
+  --texts: #8163ec;
 }
 
 body {
   color: rgb(var(--foreground-rgb));
-  background-color: #d5e0ff;
+  background-color: var(--background-all);
   /* background: linear-gradient(
       to bottom,
       transparent,
@@ -26,21 +27,6 @@ body {
     )
     rgb(var(--background-start-rgb)); */
 }
-
-.txt {
-  font: 14pt sans-serif;
-  fill: red;
-}
-svg {
-  border: 1px solid silver;
-  width: 25px;
-  height: 25px;
-  display: block;
-  margin: auto;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  overflow: visible;
-}
+/* {
+  border: 1px solid black;
+}*/
