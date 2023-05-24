@@ -1,12 +1,23 @@
+import Home from "@/components/Home";
 import { Navbar } from "@/components/Navbar";
-import Image from "next/image";
+import { Post } from "@/components/Post";
 
-export default function Home() {
+export default function App() {
   return (
-    <main className="grid grid-cols-1 min-h-screen max-w-7xl mx-auto bg-[url('/2.svg')] bg-cover bg-center">
-      <div className="">
-        <Navbar />
-      </div>
+    // bg-[url('/2.svg')]
+    <main className="container min-h-screen max-w-7xl mx-auto  bg-cover bg-center bg-fixed ">
+      {/* Navbar */}
+      <Navbar />
+      {/* Home page */}
+      <Home />
+
+      {/* <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post />
+      <Post /> */}
 
       {/* <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a

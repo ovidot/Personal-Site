@@ -4,7 +4,12 @@
 
 @layer components {
   .hoverEffect {
-    @apply cursor-pointer hover:bg-[#bbc5fa] rounded-full w-[52px] xl:w-auto h-[52-px] xl:h-auto xl:p-3;
+    @apply cursor-pointer hover:bg-[#DFD7CE] rounded-full w-[52px] xl:w-auto h-[52-px] xl:h-auto xl:p-3;
+  }
+
+  .myname {
+    font-family: Amatic, cursive;
+    color: black;
   }
 }
 :root {
