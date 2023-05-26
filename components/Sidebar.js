@@ -15,6 +15,7 @@ import {
   faTwitter,
   faYoutube,
   faInstagram,
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 
 import Name from "./Name";
@@ -33,6 +34,10 @@ export const Sidebar = () => {
         <Logo
           iconname={faInstagram}
           link="https://www.instagram.com/_ovidot/"
+        />
+        <Logo
+          iconname={faLinkedin}
+          link="https://www.linkedin.com/in/ovidot/"
         />
       </div>
     </div>

@@ -1,25 +1,19 @@
-import Home from "@/components/Home";
+// import { About } from "@/components/About";
+// import { Contact } from "@/app/Contact";
+import Home from "@/app/Home";
 import { Navbar } from "@/components/Navbar";
-import { Post } from "@/components/Post";
+// import { Projects } from "@/components/Projects";
+// import { Skills } from "@/components/Skills";
 
 export default function App() {
   return (
     // bg-[url('/2.svg')]
-    <main className="container min-h-screen max-w-7xl mx-auto  bg-cover bg-center bg-fixed ">
+    <main className="container min-h-screen max-w-7xl  mx-auto bg-cover bg-center bg-fixed ">
       {/* Navbar */}
       <Navbar />
       {/* Home page */}
       <Home />
-
-      {/* <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post /> */}
-
-      {/* <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
+      <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
           className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
@@ -87,7 +81,7 @@ export default function App() {
             Instantly deploy your Next.js site to a shareable URL with Vercel.
           </p>
         </a>
-      </div> */}
+      </div>
     </main>
   );
 }

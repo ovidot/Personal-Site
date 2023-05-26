@@ -19,7 +19,7 @@ const Name = () => {
               love for problem-solving.
             </p>
 
-            <Button text="Say Hello" className="" />
+            <Button text="Say Hello" style="text-gray-950 font-bold" />
           </div>
         </div>
       </div>

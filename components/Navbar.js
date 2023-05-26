@@ -17,13 +17,14 @@ import {
 } from "@heroicons/react/24/outline";
 import { NavbarMenuItem } from "./NavbarMenuItem";
 import { useState } from "react";
+import Link from "next/link";
 
 export const Navbar = () => {
   // Toggle menu
   const [Toggle, showNav] = useState(false);
   return (
-    <div className="fixed md:grid grid-cols-1 inset-x-0 bottom-0 lg:sticky lg:top-0  ">
-      <div className="flex flex-row sm:flex  justify-between  p-5   h-auto w-full">
+    <div className="fixed md:grid grid-cols-1 bg-[#d5e0ff] inset-x-0 bottom-0 lg:sticky lg:top-0 h-18  ">
+      <div className="flex flex-row sm:flex  justify-between p-2 my-2 -mb-3  h-auto w-full">
         {/* Logo */}
         <div className="hoverEffect hover:scale-125 p-0 hover:bg-none xl:p-1">
           <Image
@@ -39,16 +40,24 @@ export const Navbar = () => {
         {/* Menu */}
         <div
           className={`${
-            !Toggle
-              ? "hidden"
-              : " flex mt-1 md:flex my-auto mb-2.5 xl:items-start"
+            !Toggle ? "hidden" : " flex  md:flex my-auto mb-2.5 xl:items-start"
           } md:flex`}
         >
-          <NavbarMenuItem text="Home" Icon={HomeIcon} active />
-          <NavbarMenuItem text="About" Icon={InformationCircleIcon} />
-          <NavbarMenuItem text="Skills" Icon={WrenchScrewdriverIcon} />
-          <NavbarMenuItem text="Projects" Icon={BriefcaseIcon} />
-          <NavbarMenuItem text="Contact" Icon={IdentificationIcon} />
+          <Link href="#" to="Home" className="">
+            <NavbarMenuItem text="Home" Icon={HomeIcon} active />
+          </Link>
+          <Link href="About" to="about" className="">
+            <NavbarMenuItem text="About" Icon={InformationCircleIcon} />
+          </Link>
+          <Link href="#" to="Skills" className="">
+            <NavbarMenuItem text="Skills" Icon={WrenchScrewdriverIcon} />
+          </Link>
+          <Link href="#" to="Projects" className="">
+            <NavbarMenuItem text="Projects" Icon={BriefcaseIcon} />
+          </Link>
+          <Link href="#" to="Contact" className="">
+            <NavbarMenuItem text="Contact" Icon={IdentificationIcon} />
+          </Link>
         </div>
         {/* Button */}
 
