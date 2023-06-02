@@ -23,14 +23,15 @@ export const Navbar = () => {
   // Toggle menu
   const [Toggle, showNav] = useState(false);
   return (
-    <div className="fixed md:grid grid-cols-1 bg-[#d5e0ff] inset-x-0 bottom-0 lg:sticky lg:top-0 h-18  ">
+    // bg-[#d5e0ff]
+    <div className="fixed md:grid grid-cols-1  inset-x-0 bottom-0 lg:sticky lg:top-0 h-18 bg-[#d5e0ff] rounded-full ">
       <div className="flex flex-row sm:flex  justify-between p-2 my-2 -mb-3  h-auto w-full">
         {/* Logo */}
         <div className="hoverEffect hover:scale-125 p-0 hover:bg-none xl:p-1">
           <Image
             src={"/uzi-dark.svg"}
-            width={"70"}
-            height={"70"}
+            width={"50"}
+            height={"50"}
             alt=""
             onClick={() => {
               showNav(!Toggle);
@@ -40,22 +41,24 @@ export const Navbar = () => {
         {/* Menu */}
         <div
           className={`${
-            !Toggle ? "hidden" : " flex  md:flex my-auto mb-2.5 xl:items-start"
+            !Toggle
+              ? "hidden"
+              : " flex  md:flex my-auto mb-2.5 xl:items-start h-fit"
           } md:flex`}
         >
-          <Link href="#" to="Home" className="">
+          <Link href="#" to="Home" className="h-fit ">
             <NavbarMenuItem text="Home" Icon={HomeIcon} active />
           </Link>
-          <Link href="About" to="about" className="">
+          <Link href="About" to="about" className="h-fit">
             <NavbarMenuItem text="About" Icon={InformationCircleIcon} />
           </Link>
-          <Link href="#" to="Skills" className="">
+          <Link href="Skills" to="Skills" className="h-fit">
             <NavbarMenuItem text="Skills" Icon={WrenchScrewdriverIcon} />
           </Link>
-          <Link href="#" to="Projects" className="">
+          <Link href="Projects" to="Projects" className="h-fit">
             <NavbarMenuItem text="Projects" Icon={BriefcaseIcon} />
           </Link>
-          <Link href="#" to="Contact" className="">
+          <Link href="Contact" to="Contact" className="h-fit">
             <NavbarMenuItem text="Contact" Icon={IdentificationIcon} />
           </Link>
         </div>

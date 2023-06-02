@@ -1,6 +1,7 @@
 // import { About } from "@/components/About";
 // import { Contact } from "@/app/Contact";
 import { About } from "@/components/About";
+import Footer from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import { Sidebar } from "@/components/Sidebar";
 // import { Projects } from "@/components/Projects";
@@ -24,6 +25,9 @@ export default function AboutUs() {
         <div className="md:col-span-10 col-span-10 grid pt-9 mx-auto my-3 h-auto ">
           {/* Home page */}
           <About />
+        </div>
+        <div className="col-span-full">
+          <Footer />
         </div>
       </div>
     </main>

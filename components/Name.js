@@ -1,7 +1,16 @@
+"use client";
 import React from "react";
 import Button from "./Button";
+import { useRouter } from "next/navigation";
 
 const Name = () => {
+  const router = useRouter();
+  const contct = () => {
+    router.push("/Contact");
+  };
+  const proj = () => {
+    router.push("/Projects");
+  };
   return (
     <>
       <div className="container grid">
@@ -18,8 +27,18 @@ const Name = () => {
               I am a software engineer with a keen eye for detail and a deep
               love for problem-solving.
             </p>
-
-            <Button text="Say Hello" style="text-gray-950 font-bold" />
+            <div className="flex item-center">
+              <Button
+                text="Say Hello"
+                style="text-gray-950 font-bold bg-[#ddcfc0]"
+                func={contct}
+              />
+              <Button
+                text="My Works"
+                style="text-gray-950 font-bold bg-[#ddcfc0]"
+                func={proj}
+              />
+            </div>
           </div>
         </div>
       </div>
