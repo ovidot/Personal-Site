@@ -24,7 +24,7 @@ export const Navbar = () => {
   const [Toggle, showNav] = useState(false);
   return (
     // bg-[#d5e0ff]
-    <div className="fixed md:grid grid-cols-1  inset-x-0 bottom-0 lg:sticky lg:top-0 h-18 bg-[#d5e0ff] rounded-full ">
+    <div className="fixed max-w-full  md:grid grid-cols-1  inset-x-0 bottom-0 lg:sticky lg:top-0 h-18 bg-[#d5e0ff] rounded-full ">
       <div className="flex flex-row sm:flex  justify-between p-2 my-2 -mb-3  h-auto w-full">
         {/* Logo */}
         <div className="hoverEffect hover:scale-125 p-0 hover:bg-none xl:p-1">
@@ -33,6 +33,7 @@ export const Navbar = () => {
             width={"50"}
             height={"50"}
             alt=""
+            loading="lazy"
             onClick={() => {
               showNav(!Toggle);
             }}
@@ -41,7 +42,7 @@ export const Navbar = () => {
         {/* Menu */}
         <div
           className={`${
-            !Toggle
+            Toggle
               ? "hidden"
               : " flex  md:flex my-auto mb-2.5 xl:items-start h-fit"
           } md:flex`}

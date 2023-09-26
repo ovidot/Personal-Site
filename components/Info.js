@@ -13,24 +13,24 @@ import { FaReact, FaPython, FaGithub, FaGit } from "react-icons/fa";
 
 export const Info = (iconName, text) => {
   return (
-    <div className="flex flex-wrap grid-col-12 border-black-2 shadow-2xl p-7 rounded-3xl ">
-      <div className="col-span-3 flex items-center p-3 hoverEffect">
+    <div className="grid grid-col-12 border-black border shadow-2xl p-7 rounded-3xl ">
+      <div className="col-span-6 w-full lg:col-span-6 flex items-center p-3 hoverEffect">
         <TbBrandPython /> Python(
         <SiFlask /> Flask)
       </div>
-      <div className="col-span-3 flex items-center p-3 hoverEffect">
+      <div className="col-span-6 lg:col-span-3 w-full flex items-center p-3 hoverEffect">
         <TbBrandNextjs /> NextJs
       </div>
-      <div className="col-span-3 flex items-center p-3 hoverEffect">
+      <div className="col-span-6 lg:col-span-3 w-full flex items-center p-3 hoverEffect">
         <FaReact /> React
       </div>
-      <div className="col-span-3 flex items-center p-3 hoverEffect">
+      <div className="col-span-6 lg:col-span-3 w-full flex items-center p-3 hoverEffect">
         <TbBrandJavascript /> JavaScript
       </div>
-      <div className="col-span-3 flex items-center p-3 hoverEffect">
+      <div className="col-span-6 lg:col-span-3 w-full flex items-center p-3 hoverEffect">
         <FaGithub /> Github
       </div>
-      <div className="col-span-3 flex items-center p-3 hoverEffect">
+      <div className="col-span-6 lg:col-span-3 w-full flex items-center p-3 hoverEffect">
         <FaGit /> Git
       </div>
     </div>
