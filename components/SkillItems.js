@@ -16,7 +16,7 @@ export const SkillItems = ({
 }) => {
   return (
     <div
-      className=" col-span-12 md:col-span-6 xl:col-span-3  p-5 items-center justify-center mx-5 myname text-gray-700 font-bold shadow-2xl rounded-2xl
+      className=" col-span-12 md:col-span-6 xl:col-span-3   p-5 items-center justify-center mx-5 myname text-gray-700 font-bold shadow-2xl rounded-2xl hover:scale-110 hover:transition-transform hover:ease-in
      "
     >
       {/* Icon */}
@@ -25,7 +25,7 @@ export const SkillItems = ({
         alt="image"
         width={3375}
         height={3375}
-        className=" w-32 h-auto rounded-xl mx-auto hover:animate-bounce hover:scale-110 "
+        className="my-auto w-32 h-auto rounded-xl mx-auto hover:animate-bounce hover:scale-105 "
       />
       <h2 className="font-bold text-center text-black">{text}</h2>
       <ol className="text-center">
