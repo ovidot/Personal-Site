@@ -16,7 +16,7 @@ export const SkillItems = ({
 }) => {
   return (
     <div
-      className=" p-5 place-content-center mx-5 myname text-gray-700 font-bold shadow-2xl rounded-2xl
+      className=" col-span-12 md:col-span-6 xl:col-span-3  p-5 items-center justify-center mx-5 myname text-gray-700 font-bold shadow-2xl rounded-2xl
      "
     >
       {/* Icon */}

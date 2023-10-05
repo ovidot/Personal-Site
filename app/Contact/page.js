@@ -14,11 +14,11 @@ export default function myProjects() {
         id="Home"
       >
         {/* Sidebar */}
-        <div className="col-span-12 h-fit md:col-span-2">
+        <div className="col-span-2">
           <Sidebar />
         </div>
 
-        <div className="md:col-span-10 col-span-full grid pt-9 mx-auto my-3 h-auto ">
+        <div className="md:col-span-10 col-span-10 grid pt-9 mx-auto my-3 h-auto ">
           {/* Home page */}
           <Contact />
         </div>

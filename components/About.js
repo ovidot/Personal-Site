@@ -39,7 +39,7 @@ export const About = () => {
         </div>
       </div>
 
-      <div className="col-span-full lg:col-span-7">
+      <div className="col-span-full lg:col-span-7 -ms-12 lg:ms-0">
         <div className="md:col-span-6 col-span-12 grid pt-9 mx-auto my-3 text-center font-semibold text-gray-700  justify-between h-full text-xl space-y-20 ">
           <bio>
             <p> Hi, Welcome to my world! </p>
@@ -53,7 +53,7 @@ export const About = () => {
             structured web services from simple, yet great UI designs to
             functional and well optimized web appllications.
           </bio>
-          <div className="info">
+          <div className="grid">
             <Info />
           </div>
           <p className="text-md inline-flex justify-center items-center">
@@ -68,11 +68,6 @@ export const About = () => {
           </p>
         </div>
       </div>
-
-      {/* LEFT SECTION */}
-      <div className="col-span-full lg:col-span-6"></div>
-      {/* RIGHT SECTION */}
-      <div className="col-span-full lg:col-span-6"></div>
     </section>
   );
 };

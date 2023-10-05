@@ -19,21 +19,6 @@ export const Contact = () => {
           Get in touch
         </p>
       </div>
-
-      {/* LEFT SECTION */}
-      <div className="col-span-full lg:col-span-6 my-auto">
-        <div className=" shadow-2xl text-start  p-11 rounded-3xl">
-          {" "}
-          <p className="text-2xl font-bold text-gray-700">Email Me:</p>
-          <p className="flex items-center text-4xl font-bold text-gray-700">
-            <a href="uovraiti@gmail.com" className="flex">
-              <SiGmail className="me-3" />
-              {" uovraiti@gmail.com "}
-            </a>
-          </p>
-        </div>
-      </div>
-
       {/* RIGHT SECTION */}
       <div className="col-span-full lg:col-span-6 m-11">
         <Image
@@ -43,6 +28,19 @@ export const Contact = () => {
           width={3375}
           height={3375}
         />
+      </div>
+      {/* LEFT SECTION */}
+      <div className="col-span-full lg:col-span-6 my-auto">
+        <div className=" shadow-2xl text-start  p-11 rounded-3xl">
+          {" "}
+          <p className="text-2xl font-bold text-gray-700">Email Me:</p>
+          <p className="flex items-center text-2xl font-bold text-gray-700">
+            <a href="uovraiti@gmail.com" className="flex items-center">
+              <SiGmail className=" lg:me-3 p-1 shadow-inner" />
+              {" uovraiti@gmail.com "}
+            </a>
+          </p>
+        </div>
       </div>
     </section>
   );
