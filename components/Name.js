@@ -38,7 +38,7 @@ const Name = () => {
           />
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
