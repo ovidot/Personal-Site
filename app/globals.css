@@ -4,7 +4,7 @@
 
 @layer components {
   .hoverEffect {
-    @apply cursor-pointer hover:bg-[#ddcfc0] rounded-full w-[52px] xl:w-auto h-[52-px] xl:h-auto xl:p-3;
+    @apply cursor-pointer hover:bg-[#ddcfc0] rounded-full w-auto xl:w-auto h-[52-px] xl:h-auto xl:p-3;
   }
 
   .myname {
@@ -51,6 +51,6 @@ body {
     )
     rgb(var(--background-start-rgb)); */
 }
-/* {
-  border: 1px solid black;
-}*/
+{
+  border: 2px solid black;
+}

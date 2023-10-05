@@ -1,10 +1,6 @@
-// import { About } from "@/components/About";
-// import { Contact } from "@/app/Contact";
 import Home from "@/app/Home";
 import Footer from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
-// import { Projects } from "@/components/Projects";
-// import { Skills } from "@/components/Skills";
 
 export default function App() {
   return (
@@ -13,7 +9,9 @@ export default function App() {
       {/* Navbar */}
       <Navbar />
       {/* Home page */}
-      <Home />
+      <div className="md:col-span-10 col-span-full grid pt-9 mx-auto my-3 h-auto ">
+        <Home />
+      </div>
       {/* <div className="mb-32 grid text-center lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"

@@ -1,9 +1,9 @@
-import Footer from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import { Sidebar } from "@/components/Sidebar";
-import { Skills } from "@/components/Skills";
+import Footer from "@/components/Footer";
+import { Contact } from "@/components/Contact";
 
-export default function AboutUs() {
+export default function myProjects() {
   return (
     // bg-[url('/2.svg')]
     <main className="container min-h-screen max-w-7xl mx-auto   bg-cover bg-center bg-fixed ">
@@ -14,13 +14,13 @@ export default function AboutUs() {
         id="Home"
       >
         {/* Sidebar */}
-        <div className="col-span-full md:col-span-2">
+        <div className="col-span-12 h-fit md:col-span-2">
           <Sidebar />
         </div>
 
-        <div className="md:col-span-10 col-span-12 grid md:pt-9 h-auto ">
+        <div className="md:col-span-10 col-span-full grid pt-9 mx-auto my-3 h-auto ">
           {/* Home page */}
-          <Skills />
+          <Contact />
         </div>
         <div className="col-span-full">
           <Footer />
