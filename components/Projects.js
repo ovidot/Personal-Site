@@ -86,6 +86,7 @@ export const Projects = () => {
           <a
             className="hover:scale-105 text-[#eeb271]"
             href="https://github.com/ovidot/flask_gallery_app"
+            target="_blank"
           >
             Code Repository
           </a>
@@ -149,6 +150,7 @@ export const Projects = () => {
           <a
             className="hover:scale-105 text-[#eeb271]"
             href="https://github.com/ovidot/flask_gallery_app"
+            target="_blank"
           >
             Code Repository
           </a>

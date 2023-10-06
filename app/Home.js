@@ -11,12 +11,12 @@ const Home = () => {
         id="Home"
       >
         {/* Sidebar */}
-        <div className="col-span-12 h-fit md:col-span-2">
+        <div className="col-span-2 h-fit md:col-span-2">
           <Sidebar />
         </div>
         {/* middle content */}
         {/* Name and intro */}
-        <div className="md:col-span-5 col-span-9 mx-auto my-3 h-auto ">
+        <div className="md:col-span-5  col-span-10 mx-auto my-3 h-auto ">
           <Name />
           {/* <ScrollDown /> */}
         </div>
