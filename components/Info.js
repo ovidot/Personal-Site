@@ -13,7 +13,7 @@ import { FaReact, FaPython, FaGithub, FaGit } from "react-icons/fa";
 
 export const Info = (iconName, text) => {
   return (
-    <div className="grid grid-col-12 border-black border shadow-2xl p-7 rounded-3xl ">
+    <div className="grid grid-col-12  shadow-2xl p-7 rounded-3xl ">
       <div className="col-span-6 w-full lg:col-span-6 flex items-center p-3 hoverEffect">
         <TbBrandPython /> Python(
         <SiFlask /> Flask)

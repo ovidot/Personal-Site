@@ -14,11 +14,11 @@ export default function AboutUs() {
         id="Home"
       >
         {/* Sidebar */}
-        <div className="col-span-full md:col-span-2">
+        <div className="col-span-2">
           <Sidebar />
         </div>
 
-        <div className="md:col-span-10 col-span-12 grid md:pt-9 h-auto ">
+        <div className="col-span-10 md:col-span-10 grid md:pt-9 h-auto ">
           {/* Home page */}
           <Skills />
         </div>

@@ -31,7 +31,7 @@ export const Projects = () => {
       </div>
 
       {/* LEFT SECTION */}
-      <div className="col-span-full lg:col-span-6 ">
+      <div className="col-span-full lg:col-span-6 hidden md:flex">
         <Image
           src="/ArtGallery3.png"
           alt=""
@@ -45,13 +45,20 @@ export const Projects = () => {
         <h1 className="font-bold text-[#eeb271] text-2xl hover:text-gray-700 mt-10 text-start">
           {" Ovidot's Art Gallery "}
         </h1>
-        <p className="text-start">
+        <p className="text-start ">
+          <Image
+            src="/ArtGallery3.png"
+            alt=""
+            className="md:hidden"
+            width={3375}
+            height={3375}
+          />
           This is an e-commerce app built with the main purpose of buying and
           selling art online, This app helps New Up coming fine Artists get seen
           and their Arts recognised
         </p>
-        Stack:
-        <p className="text-left font-bold md:flex flex-wrap items-center text-gray-700 ">
+        <p className="mt-3">Stack:</p>
+        <p className="text-left font-bold flex p-5 md:flex flex-wrap items-center text-gray-700 ">
           <span className="flex hoverEffect">
             <FontAwesomeIcon icon={faHtml5} className="h-6" text="" />
             HTML5
@@ -73,12 +80,16 @@ export const Projects = () => {
             MySQL
           </span>
         </p>
-        <Logo
-          style=""
-          iconname={faGithub}
-          link="https://github.com/ovidot/flask_gallery_app"
-          text="Code"
-        />
+        <div className="flex gap-2">
+          {" "}
+          <Logo style="" iconname={faGithub} />
+          <a
+            className="hover:scale-105 text-[#eeb271]"
+            href="https://github.com/ovidot/flask_gallery_app"
+          >
+            Code Repository
+          </a>
+        </div>
         <p className="">Live site: coming soon...</p>
         {/* <div className="flex place-content-center">
           <video
@@ -90,6 +101,79 @@ export const Projects = () => {
             <source src="/Art.mkv" />
           </video>
         </div> */}
+      </div>
+
+      {/* RIGHT SECTION */}
+      <div className="col-span-full lg:col-span-6 shadow-2xl text-start my-auto p-11 rounded-3xl ">
+        <h1 className="font-bold text-[#eeb271] text-2xl hover:text-gray-700 mt-10 text-start">
+          {" Ovidot's Art Gallery "}
+        </h1>
+        <p className="text-start ">
+          <Image
+            src="/ArtGallery3.png"
+            alt=""
+            className="md:hidden"
+            width={3375}
+            height={3375}
+          />
+          This is an e-commerce app built with the main purpose of buying and
+          selling art online, This app helps New Up coming fine Artists get seen
+          and their Arts recognised
+        </p>
+        <p className="mt-3">Stack:</p>
+        <p className="text-left font-bold flex p-5 md:flex flex-wrap items-center text-gray-700 ">
+          <span className="flex hoverEffect">
+            <FontAwesomeIcon icon={faHtml5} className="h-6" text="" />
+            HTML5
+          </span>
+          <span className="flex hoverEffect">
+            <FontAwesomeIcon icon={faCss3} className="h-6" />
+            CSS3(Bootstrap)
+          </span>
+          <span className="flex hoverEffect">
+            <FontAwesomeIcon icon={faJs} className="h-6" />
+            JavaScript
+          </span>
+          <span className="flex hoverEffect">
+            <FontAwesomeIcon icon={faPython} className="h-6" />
+            Python(FLASK)
+          </span>
+          <span className="flex hoverEffect">
+            <SiMysql className="" />
+            MySQL
+          </span>
+        </p>
+        <div className="flex gap-2">
+          {" "}
+          <Logo style="" iconname={faGithub} />
+          <a
+            className="hover:scale-105 text-[#eeb271]"
+            href="https://github.com/ovidot/flask_gallery_app"
+          >
+            Code Repository
+          </a>
+        </div>
+        <p className="">Live site: coming soon...</p>
+        {/* <div className="flex place-content-center">
+          <video
+            autoPlay
+            loop
+            className="rounded-3xl  h-fit hover:shadow-2xl hover:scale-105 md:mt-4 md:mb-4"
+            style={{ width: "400px", height: "225px" }}
+          >
+            <source src="/Art.mkv" />
+          </video>
+        </div> */}
+      </div>
+      {/* LEFT SECTION */}
+      <div className="col-span-full lg:col-span-6 hidden md:flex">
+        <Image
+          src="/ArtGallery3.png"
+          alt=""
+          className=""
+          width={3375}
+          height={3375}
+        />
       </div>
     </section>
   );

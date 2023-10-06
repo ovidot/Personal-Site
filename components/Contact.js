@@ -31,7 +31,7 @@ export const Contact = () => {
       </div>
       {/* LEFT SECTION */}
       <div className="col-span-full lg:col-span-6 my-auto">
-        <div className=" shadow-2xl text-start  p-11 rounded-3xl">
+        <div className=" shadow-2xl text-start -ms-14 md:m-0 p-11 rounded-3xl">
           {" "}
           <p className="text-2xl font-bold text-gray-700">Email Me:</p>
           <p className="flex items-center text-2xl font-bold text-gray-700">

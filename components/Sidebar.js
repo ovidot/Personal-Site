@@ -23,7 +23,7 @@ import Logo from "./Logo";
 
 export const Sidebar = () => {
   return (
-    <div className=" sm:flex  flex-col p-2 xl:items-center  h-full">
+    <div className=" flex  flex-col p-2 xl:items-center  h-full">
       <div className="mt-4 mb-2.5 xl:items-center ">
         <Logo
           iconname={faGithub}

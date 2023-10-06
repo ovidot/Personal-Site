@@ -27,7 +27,7 @@ export const SkillItems = ({
         height={3375}
         className="my-auto w-32 h-auto rounded-xl mx-auto hover:animate-bounce hover:scale-105 "
       />
-      <h2 className="font-bold text-center text-black">{text}</h2>
+      <h2 className=" text-center text-black text-lg font-extrabold">{text}</h2>
       <ol className="text-center">
         <li className=" hover:scale-110">{one}</li>
         <li className=" hover:scale-110">{two}</li>

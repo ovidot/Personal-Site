@@ -10,7 +10,7 @@ import { Sidebar } from "@/components/Sidebar";
 export default function AboutUs() {
   return (
     // bg-[url('/2.svg')]
-    <main className="container min-h-screen max-w-7xl mx-auto   bg-cover bg-center bg-fixed ">
+    <main className="container min-h-screen max-w-7xl mx-auto   bg-cover bg-center bg-fixed p-3  ">
       {/* Navbar */}
       <Navbar />
       <div
@@ -18,7 +18,7 @@ export default function AboutUs() {
         id="Home"
       >
         {/* Sidebar */}
-        <div className="col-span-12 h-fit md:col-span-2">
+        <div className=" h-fit col-span-2 border rounded-2xl md:border-none shadow-lg lg:shadow-none">
           <Sidebar />
         </div>
 

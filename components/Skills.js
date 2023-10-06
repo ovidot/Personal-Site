@@ -10,10 +10,10 @@ import {
 
 export const Skills = () => {
   return (
-    <div className=" grid grid-col-12  " id="Home">
+    <div className=" grid grid-col-12 gap-5" id="Home">
       <div className="col-span-12 flex items-center justify-center  md:text-center md:-mt-28 ">
-        <p className="text-5xl   pb-0 font-bold text-gray-700 underline ">
-          Skills
+        <p className="text-5xl  mt-20 pb-0 font-bold text-gray-700 underline ">
+          Stack
         </p>
       </div>
 
