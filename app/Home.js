@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <>
       <div
-        className="grid grid-cols-12  h-full place-content-center "
+        className="grid grid-cols-12  h-full place-content-center mt-7 lg:mt-0 "
         id="Home"
       >
         {/* Sidebar */}

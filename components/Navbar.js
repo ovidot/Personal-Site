@@ -18,7 +18,6 @@ import {
 import { NavbarMenuItem } from "./NavbarMenuItem";
 import { useState } from "react";
 import Link from "next/link";
-
 import { Noto_Serif } from "next/font/google";
 
 const notoSerif = Noto_Serif({
@@ -31,27 +30,15 @@ export const Navbar = () => {
   const [Toggle, showNav] = useState(false);
   return (
     // bg-[#d5e0ff]
-    <div className="fixed max-w-full  md:grid grid-cols-1  inset-x-0 bottom-0 lg:sticky lg:top-0 h-18 bg-[#d5e0ff] rounded-full ">
+
+    <div className="fixed max-w-full  md:grid grid-cols-1  inset-x-0 top-0 lg:sticky lg:top-0 h-18 bg-[#d5e0ff] rounded-full ">
       <div className="flex flex-row sm:flex  justify-between p-2 my-2 -mb-3  h-auto w-full">
-        {/* Logo */}
-        <div className="hoverEffect hover:scale-125 p-0 hover:bg-none xl:p-1">
-          <Image
-            src={"/uzi-dark.svg"}
-            width={"50"}
-            height={"50"}
-            alt=""
-            loading="lazy"
-            onClick={() => {
-              showNav(!Toggle);
-            }}
-          ></Image>
-        </div>
         {/* Menu */}
         <div
           className={`${
             Toggle
               ? "hidden"
-              : " flex  md:flex my-auto mb-2.5 xl:items-start h-fit"
+              : " w-full justify-evenly flex  md:flex my-auto mb-2.5 xl:items-start h-fit"
           } `}
         >
           <Link href="#" to="Home" className="h-fit ">
@@ -70,16 +57,29 @@ export const Navbar = () => {
             <NavbarMenuItem text="Contact" Icon={IdentificationIcon} />
           </Link>
         </div>
+        {/* Logo */}
+        <div className="hoverEffect hover:scale-125 p-0 hover:bg-none xl:p-1">
+          <Image
+            src={"/uzi-dark.svg"}
+            width={"50"}
+            height={"50"}
+            alt=""
+            loading="lazy"
+            onClick={() => {
+              showNav(!Toggle);
+            }}
+          ></Image>
+        </div>
         {/* Button */}
 
         {/* <div className="hoverEffect text-gray-700 flex items-center justify-center xl:justify-start mt-auto ">
-        <button
-          className="bg-black text-white rounded-full w-36 h-12 font-bold shadow-md hover:brightness-90 text-lg hidden xl:inline"
-          onClick={""}
-        >
-          Sign In
-        </button>
-      </div> */}
+    <button
+      className="bg-black text-white rounded-full w-36 h-12 font-bold shadow-md hover:brightness-90 text-lg hidden xl:inline"
+      onClick={""}
+      >
+      Sign In
+    </button>
+  </div> */}
       </div>
     </div>
   );

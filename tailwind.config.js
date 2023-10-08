@@ -25,5 +25,6 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("flowbite/plugin")],
+  // content: ["./pages/**/*.{ts,tsx}", "./public/**/*.html"],
 };
