@@ -35,7 +35,11 @@ export const Contact = () => {
           {" "}
           <p className="text-2xl font-bold text-gray-700">Email Me:</p>
           <p className="flex items-center text-2xl font-bold text-gray-700">
-            <a href="uovraiti@gmail.com" className="flex items-center">
+            <a
+              href="mailto:uovraiti@gmail.com?subject=Feedback&body=Message"
+              target="_blank"
+              className="flex items-center"
+            >
               <SiGmail className=" lg:me-3 p-1 shadow-inner" />
               {" uovraiti@gmail.com "}
             </a>

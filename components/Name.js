@@ -25,7 +25,7 @@ const Name = () => {
           I am a software engineer with a keen eye for detail and a deep love
           for problem-solving.
         </p>
-        <div className="flex item-center">
+        <div className="flex items-center">
           <Button
             text="Say Hello"
             style="text-gray-950 font-bold bg-[#ddcfc0]"

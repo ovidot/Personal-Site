@@ -34,7 +34,7 @@ export const About = () => {
               width={3375}
               height={3375}
               loading="lazy"
-              className=" shadow-2xl lg:max-w-lg  w-80 h-auto rounded-full shrink home_img "
+              className=" shadow-2xl lg:max-w-lg  w-80 h-auto rounded-2xl shrink  "
             />
           </div>
         </div>

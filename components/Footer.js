@@ -8,7 +8,7 @@ import Logo from "./Logo";
 
 const Footer = () => {
   return (
-    <section className="bg-[ #757ca1] flex flex-col shadow-xl rounded-xl mb-16 md:mb-1 px-5 items-center ">
+    <section className="bg-[ #757ca1] flex flex-col shadow-xl rounded-xl  md:mb-1 px-5 items-center ">
       <h1 className="my-3 myname font-bold text-gray-700">
         Uzezi Henry Ovraiti
       </h1>
