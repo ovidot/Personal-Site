@@ -13,11 +13,17 @@ import {
   faJs,
   faPython,
   faReact,
+  faWordpress,
+  faElementor,
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { SiMysql } from "react-icons/si";
 import { IoOptions } from "react-icons/io";
-import { faFlask, faGlobe } from "@fortawesome/free-solid-svg-icons";
+import {
+  faDatabase,
+  faFlask,
+  faGlobe,
+} from "@fortawesome/free-solid-svg-icons";
 
 export const Projects = () => {
   return (
@@ -184,7 +190,7 @@ export const Projects = () => {
       {/* LEFT SECTION */}
       <div className="col-span-full lg:col-span-6 hidden shadow-lg md:flex">
         <Image
-          src="/ArtGallery3.png"
+          src="/Journalappmockupss.png"
           alt=""
           className=""
           width={3375}
@@ -194,7 +200,7 @@ export const Projects = () => {
       {/* RIGHT SECTION */}
       <div className="col-span-full lg:col-span-6  text-start my-auto p-11 rounded-3xl ">
         <h1 className="font-bold text-[#eeb271] text-2xl hover:text-gray-700 mt-10 text-start">
-          {" Ovidot's Art Gallery "}
+          {" Ovidot's Journal App "}
         </h1>
         <p className="text-start ">
           <Image
@@ -211,24 +217,20 @@ export const Projects = () => {
         <p className="mt-3">Stack:</p>
         <p className="text-left font-bold flex p-5 md:flex flex-wrap items-center text-gray-700 ">
           <span className="flex hoverEffect">
-            <FontAwesomeIcon icon={faHtml5} className="h-6" text="" />
-            HTML5
+            <FontAwesomeIcon icon={faReact} className="h-6" text="" />
+            ReactJS
           </span>
           <span className="flex hoverEffect">
             <FontAwesomeIcon icon={faCss3} className="h-6" />
-            CSS3(Bootstrap)
+            Tailwind-CSS
           </span>
           <span className="flex hoverEffect">
             <FontAwesomeIcon icon={faJs} className="h-6" />
-            JavaScript
+            NextJS
           </span>
           <span className="flex hoverEffect">
-            <FontAwesomeIcon icon={faPython} className="h-6" />
-            Python(FLASK)
-          </span>
-          <span className="flex hoverEffect">
-            <SiMysql className="" />
-            MySQL
+            <FontAwesomeIcon icon={faDatabase} className="h-6" />
+            Firebase
           </span>
         </p>
         <div className="flex gap-2">
@@ -253,6 +255,68 @@ export const Projects = () => {
             <source src="/Art.mkv" />
           </video>
         </div> */}
+      </div>
+      {/* RIGHT SECTION */}
+      <div className="col-span-full lg:col-span-6  text-start my-auto p-11 rounded-3xl ">
+        <h1 className="font-bold text-[#eeb271] text-2xl hover:text-gray-700 mt-10 text-start">
+          {"Skattathebrand "}
+        </h1>
+        <p className="text-start ">
+          <Image
+            src="/ArtGallery3.png"
+            alt=""
+            className="md:hidden"
+            width={3375}
+            height={3375}
+          />
+          Skatta the brand is a fashion brand that sells clothes and accesories
+          for fashion and this app was made to showcase these products in an
+          organized fashion.
+        </p>
+        <p className="mt-3">Stack:</p>
+        <p className="text-left font-bold flex p-5 md:flex flex-wrap items-center text-gray-700 ">
+          <span className="flex hoverEffect">
+            <FontAwesomeIcon icon={faWordpress} className="h-6" text="" />
+            Wordpress
+          </span>
+          <span className="flex hoverEffect">
+            <FontAwesomeIcon icon={faElementor} className="h-6" text="" />
+            Elementor
+          </span>
+          <span className="flex hoverEffect">
+            <FontAwesomeIcon icon={faCss3} className="h-6" />
+            CSS
+          </span>
+          <span className="flex hoverEffect">
+            <FontAwesomeIcon icon={faHtml5} className="h-6" />
+            HTML
+          </span>
+        </p>
+
+        <p className="">
+          Live site:{" "}
+          <a href="http://https://skattathebrand.com/">skattathebrand.com</a>
+        </p>
+        {/* <div className="flex place-content-center">
+          <video
+            autoPlay
+            loop
+            className="rounded-3xl  h-fit hover:shadow-2xl hover:scale-105 md:mt-4 md:mb-4"
+            style={{ width: "400px", height: "225px" }}
+          >
+            <source src="/Art.mkv" />
+          </video>
+        </div> */}
+      </div>
+      {/* LEFT SECTION */}
+      <div className="col-span-full lg:col-span-6 hidden shadow-lg md:flex">
+        <Image
+          src="/sk-mockup.png"
+          alt=""
+          className=""
+          width={3375}
+          height={3375}
+        />
       </div>
     </section>
   );

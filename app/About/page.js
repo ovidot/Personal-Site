@@ -18,7 +18,7 @@ export default function AboutUs() {
         id="Home"
       >
         {/* Sidebar */}
-        <div className=" h-fit col-span-2  rounded-2xl md:border-none shadow-lg lg:shadow-none">
+        <div className=" col-span-2 ">
           <Sidebar />
         </div>
 
