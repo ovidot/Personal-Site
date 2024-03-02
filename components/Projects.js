@@ -204,7 +204,7 @@ export const Projects = () => {
         </h1>
         <p className="text-start ">
           <Image
-            src="/ArtGallery3.png"
+            src="/Journalappmockupss.png"
             alt=""
             className="md:hidden"
             width={3375}
@@ -263,7 +263,7 @@ export const Projects = () => {
         </h1>
         <p className="text-start ">
           <Image
-            src="/ArtGallery3.png"
+            src="/sk-mockup.png"
             alt=""
             className="md:hidden"
             width={3375}
