@@ -41,7 +41,7 @@ export const Navbar = () => {
               : " w-full justify-evenly flex  md:flex my-auto mb-2.5 xl:items-start h-fit"
           } `}
         >
-          <Link href="#" to="Home" className="h-fit ">
+          <Link href="/" to="Home" className="h-fit ">
             <NavbarMenuItem text="Home" Icon={HomeIcon} active />
           </Link>
           <Link href="About" to="about" className="h-fit">
