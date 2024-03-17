@@ -26,6 +26,7 @@ export const Skills = () => {
         three="Javascript"
         four="React-js"
         five="Bootstrap & Tailwind"
+        six={"Next.Js"}
       />
       <SkillItems
         url="/database-storage.png"
@@ -42,6 +43,7 @@ export const Skills = () => {
         two="Git & GitHub"
         three="Postman-API"
         four="NPM "
+        five={"Wordpress"}
       />
       <SkillItems
         url="/responsive-design.png"
