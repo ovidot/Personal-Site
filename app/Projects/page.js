@@ -19,7 +19,7 @@ export default function myProjects() {
       >
         {/* Sidebar */}
         <div className="col-span-2 h-fit md:col-span-2">
-          <Fade direction="left">
+          <Fade>
             <Sidebar />
           </Fade>
         </div>

@@ -42,12 +42,13 @@ const Projectitem = ({
   name5,
   repolink,
   livelink,
+  titlelink,
 }) => {
   return (
     <>
       {/* LEFT SECTION */}
-      <div className="col-span-full lg:col-span-6 hidden shadow-lg md:flex cursor-pointer">
-        <Fade direction="left">
+      <div className="col-span-full lg:col-span-6 hidden hover:shadow-lg  md:flex cursor-pointer hover:scale-110 hover:duration-500 duration-500 rounded-3xl">
+        <Fade direction="up" triggerOnce={true}>
           <Image
             src={projectimg}
             alt=""
@@ -58,10 +59,14 @@ const Projectitem = ({
         </Fade>
       </div>
       {/* RIGHT SECTION */}
+
       <div className="col-span-full lg:col-span-6  text-start my-auto p-11 rounded-3xl ">
-        <Fade direction="right">
-          <h1 className="font-bold text-[#eeb271] text-2xl hover:text-gray-700 mt-10 text-start">
-            {Title}
+        <Fade direction="up" cascade={true} triggerOnce={true} duration={300}>
+          <h1 className="font-bold text-[#eeb271] text-2xl hover:text-gray-700 mt-10 text-start cursor-pointer">
+            <a href={titlelink} target="_blank">
+              {" "}
+              {Title}
+            </a>
           </h1>
           <p className="text-start  ">
             <Image

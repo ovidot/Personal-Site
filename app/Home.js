@@ -16,9 +16,7 @@ const Home = () => {
 
         <div className="col-span-2 h-fit md:col-span-2">
           {" "}
-          <Fade direction="left">
-            <Sidebar />
-          </Fade>
+          <Sidebar />
         </div>
         {/* middle content */}
         {/* Name and intro */}
@@ -29,7 +27,7 @@ const Home = () => {
         {/* Image */}
 
         <div className="md:col-span-5 md:mx-auto my-auto  md:my-24 col-span-12 flex  justify-center mx-auto ">
-          <Fade direction="right">
+          <Fade direction="up">
             {" "}
             <Image
               src="https://img.freepik.com/premium-vector/serious-concentrated-developer-programming-sites_316839-2216.jpg?w=740"
