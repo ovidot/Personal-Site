@@ -1,7 +1,6 @@
 import { Navbar, Brand } from "flowbite";
 import Image from "next/image";
 import { NavbarMenuItem } from "./NavbarMenuItem";
-import { useRouter } from "next/router";
 
 import React from "react";
 
