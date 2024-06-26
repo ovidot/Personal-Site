@@ -12,7 +12,7 @@ import { Fade } from "react-awesome-reveal";
 export default function AboutUs() {
   return (
     // bg-[url('/2.svg')]
-    <main className="container min-h-screen max-w-7xl mx-auto   bg-cover bg-center bg-fixed p-3  ">
+    <main className="container min-h-screen max-w-7xl mx-auto  bg-cover bg-center bg-fixed p-3  ">
       {/* Navbar */}
       <Fade direction="down">
         <Navbar />
@@ -22,13 +22,11 @@ export default function AboutUs() {
         id="Home"
       >
         {/* Sidebar */}
-        <div className="col-span-2 h-fit md:col-span-2">
-          <Fade direction="left">
-            <Sidebar />
-          </Fade>
+        <div className="col-span-2 h-fit md:col-span-2 mt-10 md:mt-0">
+          <Sidebar />
         </div>
 
-        <div className="md:col-span-10 col-span-10 grid pt-9 mx-auto my-3 h-auto ">
+        <div className="md:col-span-10 mt-10 md:mt-0 col-span-10 grid pt-9 mx-auto my-3 h-auto ">
           {/* Home page */}
           <Fade direction="">
             <About />

@@ -125,6 +125,25 @@ export const Projects = () => {
         vid={"/Art.mkv"}
         titlelink={"http://https://skattathebrand.com/"}
       />
+      <Projectitem
+        projectimg="/samofficial.png"
+        Title={"Sam Ovraiti Official "}
+        About={"  Oficial Website of Artist Sam Ovraiti"}
+        icon1={faWordpress}
+        name1={"Wordpress"}
+        icon2={faElementor}
+        name2={"Hostinger"}
+        icon3={faCss3}
+        name3={"CSS"}
+        icon4={faHtml5}
+        name4={"Html5"}
+        icon5={""}
+        name5={""}
+        repolink={"#"}
+        livelink={"http://samovraitiofficial.com/"}
+        vid={""}
+        titlelink={"http://samovraitiofficial.com/"}
+      />
     </section>
   );
 };
