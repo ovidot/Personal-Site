@@ -17,7 +17,7 @@ export const About = () => {
     >
       <div className="md:col-span-12 col-span-full md:text-center   ">
         <p className="text-5xl   pb-0 col-span-12 font-bold text-gray-700 underline ">
-          About-Me
+          About-Mee
         </p>
       </div>
 
